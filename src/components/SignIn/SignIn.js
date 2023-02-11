@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './SignIn.module.scss';
+/*import styles from './SignIn.module.scss';*/
 
 const SignIn = () =>{
     return(
