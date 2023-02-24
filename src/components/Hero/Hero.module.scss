@@ -1,0 +1,17 @@
+.hero__title {
+    display: flex;
+    justify-content: center;
+    white-space: pre-wrap;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 40px;
+}
+
+.hero__filterbar {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
+}
