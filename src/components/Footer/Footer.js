@@ -15,7 +15,7 @@ export const Footer = () =>{
                     <a href="./index.html">support@wealty.io</a>
                     <a href="./index.html">@wealty</a>
                 </div>
-           </ul>zAa
+           </ul>
         </div>
     )
 }

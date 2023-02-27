@@ -33,6 +33,14 @@ const Bathrooms = [
     { label: '7', value: '7'}
 ]
 
+const style = {
+    control: base => ({
+      ...base,
+      border: 0,
+      // This line disable the blue border
+      boxShadow: "none"
+    })
+  };
 
 export const Filterbar = () => {
     return (
@@ -43,24 +51,40 @@ export const Filterbar = () => {
                     isSearchable={false} 
                     defaultValue = { suppliers[0] }
                     options = { Type }
+                    styles={style}
+                    components={{
+                        IndicatorSeparator: () => null
+                    }}
                 />
                 <Select
                     className= {styles.filterBar__box}
                     isSearchable={false} 
                     defaultValue = { suppliers[1] }
                     options = { Cities }
+                    styles={style}
+                    components={{
+                        IndicatorSeparator: () => null
+                    }}
                 />
                 <Select
                     className= {styles.filterBar__box}
                     isSearchable={false} 
                     defaultValue = { suppliers[2] }
                     options = { Bedrooms }
+                    styles={style}
+                    components={{
+                        IndicatorSeparator: () => null
+                    }}
                 />
                 <Select
                     className= {styles.filterBar__box}
                     isSearchable={false} 
                     defaultValue = { suppliers[3] }
                     options = { Bathrooms }
+                    styles={style}
+                    components={{
+                        IndicatorSeparator: () => null
+                    }}
                 />
                 <button className={styles.filterBar__button}>Search</button>
             </div>

@@ -6,6 +6,7 @@
     font-weight: 500;
     line-height: 1;
     margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .hero__filterbar {
@@ -13,5 +14,9 @@
     justify-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
+}
+
+.hero__carousel {
+    margin-bottom: 80px;
 }

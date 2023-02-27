@@ -12,7 +12,7 @@ export const Hero = () =>{
             <div className={styles.hero__filterbar}>
                 <Filterbar/>
             </div>
-            <div>
+            <div className={styles.hero__carousel}>
                 <Carousel/>
             </div>
         </div>
