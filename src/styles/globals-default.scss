@@ -19,3 +19,13 @@ a {
 .swiper-pagination-bullet-active {
     background-color: rgb(148, 206, 69) !important;
 }
+
+.swiper {
+    width: 1300px;
+    background-color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+

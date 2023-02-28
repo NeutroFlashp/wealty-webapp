@@ -1,6 +1,4 @@
 .infoAbout {
-   display: flex;
-   justify-content: flex-end;
    background-image: url(../../assets/infoabout-bg.jpg);
    background-size: cover;
    background-position: center center;
@@ -10,8 +8,18 @@
    z-index: 8;
    color: white;
    height: 612px;
-   padding-top: 40px;
-   padding-right: 390px;   
+   position: relative;
+}
+
+.infoAbout::after {
+    content: '';
+    position: absolute;
+}
+
+.infoAbout__info {
+    position: absolute;
+    right: 400px;
+    top: 50px;
 }
 
 .infoAbout__info h1{

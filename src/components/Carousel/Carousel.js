@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore,{ Autoplay, Pagination, Navigation, Scrollbar, A11y } from "swiper";
 import styles from '../Carousel/Carousel.module.scss';
 import  card  from '../../assets/card-image.jpeg';
+import {IoLocation} from "react-icons/io5";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -64,7 +65,7 @@ export const Carousel = () => {
         </div>
         <Swiper
         spaceBetween={10}
-        slidesPerView={3}
+        slidesPerView= {3}
         autoplay={{
         delay: 2500,
         disableOnInteraction: false,
@@ -81,11 +82,15 @@ export const Carousel = () => {
                             <div className={styles.item__image}>
                                 <img src={card} alt=""/>
                             </div>
-                            <div className={styles.item__text}>
-                                <h5>{item.title}</h5>
-                                <h5>{item.type}</h5>
-                                <h5>{item.adress}</h5>
-                                <h5>{item.price}</h5>
+                            <div className={styles.item__text}>   
+                                <div className={styles.item__textleft}>
+                                    <h5 className={styles.item__title}>{item.title}</h5>
+                                    <h5 className={styles.item__local}><IoLocation/>{item.adress}</h5>
+                                </div>
+                                <div className={styles.item__textright}>
+                                    <h5 className={styles.item__type}>{item.type}</h5>
+                                    <h5 className={styles.item__price}>{item.price}</h5>
+                                </div>
                             </div>
                         </div>
                     </div>

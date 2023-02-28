@@ -5,17 +5,15 @@ import styles from './Hero.module.scss';
 
 export const Hero = () =>{
     return(
-        <div className={styles.hero}>
-            <div className={styles.hero__title}>
-                <h1>Find an investment property</h1>
-            </div>
+        <section className={styles.hero} id="hero">
+            <h1 className={styles.hero__title}>Find an investment property</h1>
             <div className={styles.hero__filterbar}>
                 <Filterbar/>
             </div>
             <div className={styles.hero__carousel}>
                 <Carousel/>
             </div>
-        </div>
+        </section>
     )
 }
 

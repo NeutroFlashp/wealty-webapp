@@ -33,17 +33,24 @@
 
 .navbar__tools {
     display: flex;
-    gap: 50px;
+    gap: 15px
+}
+
+.navbar__tools a {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    gap: 5px;
 }
 
 .navbar__search {
     color: #94CE45;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
 }
 
 .navbar__user {
     color: #94CE45;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
 }
