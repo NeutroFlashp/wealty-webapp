@@ -1,0 +1,56 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px 0px 100px;
+    align-items: center;
+    color: white;
+    font-family: Poppins;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+    font-size: 12px;
+    font-weight: 600;
+    z-index: 12;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar__logo {
+    margin-top: 12px;
+    width: 232.65px;
+    height: 64px;
+}
+
+.navbar__logo img {
+    width: 182.64px;
+    height: 52px;
+    cursor: pointer;
+}
+
+.navbar__items {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__tools {
+    display: flex;
+    gap: 15px
+}
+
+.navbar__tools a {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    gap: 5px;
+}
+
+.navbar__search {
+    color: #94CE45;
+    font-size: 20px;
+    text-align: center;
+}
+
+.navbar__user {
+    color: #94CE45;
+    font-size: 20px;
+    text-align: center;
+}

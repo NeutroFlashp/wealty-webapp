@@ -1,0 +1,33 @@
+.filterBar {
+    display: flex;
+    flex-direction: row;
+}
+
+.filterBar__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-top: solid 2px rgb(148, 206, 69);
+}
+
+.filterBar__items {
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 30px 0px;
+    opacity: 1;
+}
+
+.filterBar__box {
+    padding: 10px 10px;
+    background-color: white;
+}
+
+.filterBar__button {
+    background-color: rgb(148, 206, 69);
+    border: 0;
+    color: rgb(255, 255, 255);
+    padding: 30px 50px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
