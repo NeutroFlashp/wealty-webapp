@@ -2,6 +2,7 @@ import React from "react";
 import styles from '../InfoHouse/InfoHouse.module.scss';
 import topimg from '../../assets/top-img.jpg';
 import midimg from '../../assets/mid-img.jpg';
+import {IoLocation} from "react-icons/io5";
 
 export const InfoHouse = () => {
     return (
@@ -25,11 +26,25 @@ export const InfoHouse = () => {
                 </div>
             </div>
             <div className={styles.infoHouse__bottom}>
-                <div>
-
+                <div className={styles.bottom__text}>
+                    <div>
+                        <h1>Featured Properties</h1>
+                        <p>FIND YOUR NEXT ASSET</p>
+                    </div>
+                    <div>
+                        <h1><IoLocation/>6850 SW 29th St, Miami, FL 33155, USA</h1>
+                        <p>FOR SALE</p>
+                    </div>
+                    <div>
+                        <p>MAIN HOUSE - 2/2 (POOL)<br/>APARTMENT LEFT -... </p>
+                    </div>
+                    <div>
+                        <h1>Featured Properties</h1>
+                        <p>FIND YOUR NEXT ASSET</p>
+                    </div>
                 </div>
-                <div>
-                    
+                <div className={styles.bottom__img}>
+                    <img src={midimg} alt="mid-img"/>
                 </div>
             </div>
         </div>
