@@ -51,3 +51,39 @@
     border: none;
 }
 
+@media screen and (max-width: 1024px) {
+    .homePage {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .homePage {
+        width: 100%;   
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .homePage {
+        max-width: max-content;
+        padding-left: 20px;
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    .homePage__info h1 {
+        font-size: 35px;
+        font-weight: 500;
+        width: 425px;
+    }
+
+    .homePage__button {
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 40px;
+        width: 154.75px;
+        height: 45px;
+    }
+}
+

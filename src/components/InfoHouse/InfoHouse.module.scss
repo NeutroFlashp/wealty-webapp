@@ -7,6 +7,7 @@
 .infoHouse__top {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 50px;
     padding: 30px 0;
     position: relative;
@@ -70,4 +71,49 @@
     color: rgb(156, 156, 156);
     line-height: 1.5;
     font-weight: 500; 
+}
+
+@media screen and (max-width: 1024px) {
+    .infoHouse__top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infoHouse__mid {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .infoHouse__top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infoHouse__mid {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+@media screen and (max-width: 425px) {
+    .infoHouse__top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infoHouse__mid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top__img img{
+        width: 380px;
+    }
+
+    .mid__img img{
+        width: 400px;
+    }
+    
 }
