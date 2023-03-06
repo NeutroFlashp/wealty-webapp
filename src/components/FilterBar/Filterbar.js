@@ -1,6 +1,7 @@
 import React from 'react';
 import Select from 'react-select';
 import styles from '../FilterBar/Filterbar.module.scss';
+import {Link} from "react-router-dom";
 
 const suppliers = [
     { label: 'Property Type', value: 'Property Type' },
@@ -86,7 +87,9 @@ export const Filterbar = () => {
                         IndicatorSeparator: () => null
                     }}
                 />
-                <button className={styles.filterBar__button}>Search</button>
+                <Link to="/searchpage">
+                    <button className={styles.filterBar__button}>Search</button>
+                </Link>
             </div>
         </div>
     )
