@@ -5,6 +5,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: poppins;
+    overflow-x: hidden;
 }
 
 a {
@@ -42,12 +43,21 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+
     .swiper {
         width: 500px;
     }
 }
 
 @media screen and (max-width: 425px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: fit-content;
+        
+    }
 
     .swiper {
         width: 400px;

@@ -16,6 +16,44 @@
     opacity: 1;
 }
 
+.Search__filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgb(0 0 0 / 10%) 0px 2px 25px 3px;
+    width: 1140px;
+}
+
+.Search__filter h1 {
+    background-color: rgb(148, 206, 69);
+    width: 1140px;
+    margin-top: 0px;
+    padding: 19px;
+    color: rgb(255, 255, 255);
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 34px;
+}
+
+.Search__items {
+    display: flex;
+    margin-top: 0;
+    padding: 40px 30px 40px 30px;
+}
+
+.Search__filterbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 900px;
+    gap: 50px;
+}
+
+.Search__filterBar__buttons {
+    display: flex;
+    gap: 40px;
+}
+
 .Search__map {
     display: flex;
     justify-content: center;
@@ -27,6 +65,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 30px 0px;
+    opacity: 1;
+    width: 320px;
+    gap: 20px;
 }
 
 .Search__content {
@@ -50,23 +92,42 @@
 
 .Search__bottom {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-start;
-    gap: 90px;
+    justify-content: center;
     padding-top: 60px;
-    width: 1150px;
 }
 
-.Search__bottom h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Search__box h1 {
+    color: rgb(94, 94, 94);
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1;   
 }
 
 .Search__container {
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 30px 0px;
-    opacity: 1;
-    width: 320px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.filterBar__button {
+    background-color: rgba(148, 206, 69, 0.6);
+    border: 2px solid rgb(148, 206, 69);
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    padding: 10px 40px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 189px;
+    height: 50px;
+}
+
+.filterBar__buttons {
+    display: flex;
+    gap: 20px;
 }
